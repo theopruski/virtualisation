@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myservice2
+  name: myservice2-deployment
 spec:
   replicas: 1
   selector:
@@ -13,7 +13,6 @@ spec:
         app: myservice2
     spec:
       containers:
-        - image: theopruski/myservice2:1
-          imagePullPolicy: IfNotPresent
-          name: myservice2
-      restartPolicy: Always
+        - name: myservice2
+          image: theopruski/myservice2:1
+          imagePullPolicy: Always
