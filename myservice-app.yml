@@ -15,7 +15,10 @@ spec:
             name: myservice-service
             port:
               name: http
-      - path: /myservice2
+  - host: myservice2.localhost
+    http:
+      paths:
+      - path: /
         pathType: Prefix
         backend:
           service:
