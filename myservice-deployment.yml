@@ -14,5 +14,5 @@ spec:
     spec:
       containers:
         - name: myservice
-          image: theopruski/myservice:1
+          image: theopruski/myservice:2
           imagePullPolicy: Always
